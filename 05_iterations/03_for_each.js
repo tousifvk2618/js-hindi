@@ -54,9 +54,18 @@ const myCoding = [
     1826
 ]
 
-myCoding.forEach( (item) => {
+// myCoding.forEach( (item) => {
+//     console.log(item)
+//     // console.log(typeof item)
+//     console.log(item.languageFileName)
+//     console.log()
+// } );
+
+
+
+coding = ["js", "ruby", "py"]
+const store = coding.forEach( (item) => {
     console.log(item)
-    // console.log(typeof item)
-    console.log(item.languageFileName)
-    console.log()
 } )
+
+console.log(store)
