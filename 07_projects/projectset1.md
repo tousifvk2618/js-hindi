@@ -49,7 +49,7 @@ body.addEventListener('click', (e) => {
 
 ## project 2
 
-```
+```javascript
 // const form = document.querySelector('form')
 
 // form.addEventListener('submit', (e) => {
