@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style = "background: #212121; color:#fff">
+    
+    <ul class = "language">
+        <li>Javascript</li>
+    </ul>
+
+
+</body>
+<script>
+    languageArray = ["python", "ruby", "c++"]
+    function addLanguage(langName) {
+        const wb_li = document.createElement('li')
+        wb_li.innerText = `${langName}`
+        if (langName == "ruby") {
+            wb_li.style.color = "green"
+        }
+
+        // document.body.appendChild(wb_li)
+        document.querySelector('.language').appendChild(wb_li)
+
+    }
+    // addLanguage("py")
+    for (const element of languageArray) {
+        addLanguage(element)
+    }
+
+
+
+
+    function addLangOpti(langName) {
+        const wb_li = document.createElement('li')
+        wb_li.appendChild(document.createTextNode(langName))  //wb_li.innerText = langName
+        document.querySelector('.language').appendChild(wb_li)
+    }
+
+    addLangOpti("golang")
+    
+</script>
+</html>
