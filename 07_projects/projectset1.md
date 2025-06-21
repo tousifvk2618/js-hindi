@@ -137,3 +137,20 @@ form.addEventListener('submit', (e) => {
   }
 })
 ```
+
+
+## project 3
+
+```javascript
+const wb_clock = document.querySelector('#clock');
+
+const obj_date = new Date();
+
+// console.log(obj_date.toLocaleTimeString())
+
+setInterval(() => {
+  const obj_date = new Date();
+  wb_clock.innerHTML = obj_date.toLocaleTimeString();
+}, 1000);
+
+```
